@@ -94,23 +94,20 @@
 </head>
 <body>
     <!-- Navigation Tabs -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"id="myTab" role="tablist">
-                    <li class="nav-item"> <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home"role="tab" aria-controls="home" aria-selected="true">Home</a></li>
-                    <li class="nav-item"> <a class="nav-link active" id="OurProducts-tab" data-bs-toggle="tab" href="#OurProducts"role="tab" aria-controls="OurProducts" aria-selected="true">Our Products</a></li>
-                    <li class="nav-item"> <a class="nav-link active" id="OurPartners-tab" data-bs-toggle="tab" href="#OurPartners"role="tab" aria-controls="OurPartners" aria-selected="true">Our Partners</a></li>
-                    <li class="nav-item"> <a class="nav-link active" id="Team-tab" data-bs-toggle="tab" href="#Team"role="tab" aria-controls="Team" aria-selected="true">Our Team</a></li>
-                     <li class="nav-item">
-                    <a class="nav-link" id="CEO-tab" data-bs-toggle="tab" href="#CEO" role="tab" aria-controls="CEO" aria-selected="false">CEO Letter</a></li>
-                     <li class="nav-item">
-                    <a class="nav-link" id="about-tab" data-bs-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About Us</a></li>
-                    <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Us</a></li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="myTab" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" id="OurProducts-tab" data-bs-toggle="tab" href="#OurProducts" role="tab">Our Products</a></li>
+                    <li class="nav-item"><a class="nav-link" id="OurPartners-tab" data-bs-toggle="tab" href="#OurPartners" role="tab">Our Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" id="Team-tab" data-bs-toggle="tab" href="#Team" role="tab">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" id="CEO-tab" data-bs-toggle="tab" href="#CEO" role="tab">CEO Letter</a></li>
+                    <li class="nav-item"><a class="nav-link" id="about-tab" data-bs-toggle="tab" href="#about" role="tab">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -130,68 +127,82 @@
             </div>
         </div>
         <!-- Our Products Tab -->
-        <div class="tab-pane fade" id="OurProducts"role="tabpanel" aria-labelledby="OurServices-tab">
+         <div class="tab-pane fade" id="OurProducts" role="tabpanel">
             <h2 class="title" style="color: darkred;">Our Products</h2>
-            <div id="servicesCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="4000">
+            <div id="servicesCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="1000">
                 <div class="carousel-inner">
-                    <!-- Slide 1 -->
                     <div class="carousel-item active">
-                        <div class="row mb-4">
+                        <div class="row">
                             <div class="col-md-3 text-center">
                                 <img src="./images/Ventil Plus.jpg" alt="Ventil Plus" class="img-fluid">
                             </div>
                             <div class="col-md-9">
                                 <h2 class="text-darkred"><strong>Ventil Plus</strong></h2>
-                                <p class="mb-2">A product that eliminates flu.</p>
+                                <p>A product that eliminates flu.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Slide 2 -->
                     <div class="carousel-item">
-                        <div class="row mb-4">
+                        <div class="row">
                             <div class="col-md-3 text-center">
                                 <img src="./images/VISALMOL.jpg" alt="VISALMOL" class="img-fluid">
                             </div>
                             <div class="col-md-9">
                                 <h2 class="text-darkred"><strong>VISALMOL</strong></h2>
-                                <ul class="text-justify mb-4" style="list-style-type: none; padding-left: 0;">
+                                <ul style="list-style-type: none; padding-left: 0;">
                                     <li>Prevent and treat wheezing and shortness of breath.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-             <!-- Controls -->
-         <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </div>
-        <!-- Partners Tab -->
-        <div class="tab-pane fade" id="OurPartners">
-            <h2 class="title" style="color: darkred;">Our Partners:</h2>
-            <div class="scrolling-wrapper-partners d-flex flex-wrap">
-                <div class="partner-item text-center m-3">
-                    <img src="./images/drug-logo.png" alt="DUG" class="img-fluid">
-                    <p>Drug International Bangladesh</p>
-                </div>
-                <div class="partner-item text-center m-3">
-                    <img src="./images/images.jpeg" alt="MDI" class="img-fluid">
-                    <p>MDI Pharma</p>
-                </div>
-            </div>
+<!-- Our Partners Tab -->
+<div class="tab-pane fade" id="OurPartners" role="tabpanel" aria-labelledby="OurPartners-tab">
+  <h2 class="title" style="color: darkred;">Our Partners:</h2>
+  <div id="servicesCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="1000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row mb-4 justify-content-center">
+          <div class="col-md-3 text-center">
+            <img src="./images/drug-logo.png" alt="DUG" class="img-fluid">
+            <p>Drug International Bangladesh</p>
+          </div>
         </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row mb-4 justify-content-center">
+          <div class="col-md-3 text-center">
+            <img src="./images/images.jpeg" alt="MDI" class="img-fluid">
+            <p>MDI Pharma</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
         <!-- Team Tab -->
         <div class="tab-pane fade" id="Team">
             <h1 class="title" style="color: darkred;">Our Team</h1>
             <p class="mt-4 text-justify">
-                Our team comprises dedicated professionals with diverse expertise in pharmaceutical technologies, development, and support.
+                The Advance Pharma Technology team is a dynamic group of highly skilled professionals committed to delivering cutting-edge solutions in the pharmaceutical industry. With deep expertise in validation, quality assurance, compliance, and pharmaceutical technologies, our team combines technical precision with strategic insight to support clients in achieving regulatory excellence and operational efficiency. We pride ourselves on our ability to adapt to evolving industry needs, leveraging innovation and best practices to drive success in every project. Our collaborative approach, dedication to continuous learning, and passion for advancing healthcare make us a trusted partner in pharmaceutical transformation.
             </p>
         </div>
     </div>
