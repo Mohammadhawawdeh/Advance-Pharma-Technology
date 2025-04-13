@@ -10939,20 +10939,23 @@ body{
     background-color: #005582;
 }
 .background-container {
-    background-image: url('./images/PHARPRO.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;  /* Ensures the container is at least the viewport height */
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    -webkit-backface-visibility: hidden; /* Smoothens the image on some browsers */
-    -webkit-transform: translateZ(0); /* Improves rendering on some devices */
-    image-rendering: -webkit-optimize-contrast; /* Helps in enhancing the quality */
+    justify-content: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 .testimonial-text {
     font-style: italic;
